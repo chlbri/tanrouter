@@ -111,13 +111,14 @@ export type Head_F<
   meta?: AnyRouteMatch['meta'];
 };
 
+// TODO: to remap
 export type ChildRouter<
   TParentPath extends string = '/',
   TPath extends string = '/',
   TContext extends object = object,
   TSearchValidator = never,
   TLoaderData = any,
-  TChildren extends ChildRouter<ConcatPaths<TParentPath, TPath>>[] = never,
+  TChildren extends ChildRouter<TParentPath>[] = never,
 > = {
   parentPath: TParentPath;
   path: TPath;
