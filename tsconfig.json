@@ -16,7 +16,7 @@
     "noUnusedParameters": true,
     "moduleResolution": "Bundler",
     "types": ["vitest/globals"],
-    "jsx": "react",
+    "jsx": "react-jsx",
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
